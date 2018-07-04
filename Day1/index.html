@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PS_WebCodingDesigner</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+  <body>
+    <div class="body-container">
+      <div class="header">
+        <div class="title">Welcome to Practical Studies</div>
+        <div class="sub-title">Web Coding for Designers</div>
+        <a class="btn-basic" href="https://buzzer.anzi.kr/">Buzzer Here</a> 
+      </div>
+      <div class="contents-container">
+<!--Day 1-->
+        <div class="index">
+        Day1.html/CSS Basic
+        </div>
+        <a class="reference-link" href="https://htmlreference.io/">#HTML Reference</a>
+        <a class="reference-link" href="https://cssreference.io/">#CSS Reference</a>
+        <div class="contents">
+          <div class="content-title">&lt;Selecting specific tag&gt;</div>
+          <div class="underline"></div>
+          <div class="content-subtitle">&#9728; Select with 'Class'</div>
+          <div class="description">
+            First, define class name to a tag in html.<br>
+            And then in CSS, write down properties with<span class="highlight-green-green">.Classname</span>.
+          </div>
+          <div class="example-code">
+            @html<br> 
+            &lt;div class="클래스이름"&gt;Hello world&lt;/div&gt; <br><br>
+            @CSS<br>
+            .classname {<br>
+            color: red;<br>
+            background: yellow;<br>
+            }
+          </div>
+          <div class="underline"></div>
+          <div class="content-subtitle">&#9728; Select with 'Id'</div>
+          <div class="description">
+            Define id to a tag you want to select in html.<br>
+            Use <span class="highlight-green">&#35;Id</span> and give some style tag in CSS.
+          </div>
+          <div class="example-code">
+            @html <br>
+              &lt;div id="아이디이름"&gt;유일한이름입니다&lt;/div&gt;<br><br>
+            @CSS <br>
+              #아이디이름 {
+                color: blue;
+                }
+          </div>
+        </div>
+
+        <div class="contents">
+          <div class="content-title">&lt;The 'Display' property&gt;</div>
+          <div class="description">
+            <span class="highlight-green">display</span> is CSS's most important property for controlling layout. Every element has a default display value depending on what type of element it is. <br> The default for most elements is usually block or inline. <br> A block element is often called a block-level element and an inline element is always just called an inline element.
+          </div>
+          <div class="underline"></div>
+          <div class="content-subtitle">&#9728; inline : 현재 글줄에 이어서 표현됩니다</div>
+          <div class="example-code">
+            -display: inline <br>
+            -margin-top, margin-bottom이 적용되지 않습니다. <br>
+            -컨텐츠 고유의 사이즈로 표현됩니다. <br>
+          </div>
+          <div class="content-subtitle">&#9728; block : 현재 글줄 다음에 Block단위로 표현됩니다</div>
+          <div class="example-code">
+            -display: block <br>
+            -부모 요소의 100% width를 차지합니다 <br>
+            -margin이 적용됩니다 <br>
+          </div>
+          <div class="content-subtitle">&#9728; inline-block : 글줄에 이어서 표현하되 Block단위로 표현됩니다</div>
+          <div class="example-code">
+            -display: inline-block <br>
+            -컨텐츠 고유의 사이즈로 표현됩니다. <br>
+            -margin이 적용됩니다. <br>
+          </div>
+          <div class="content-subtitle">&#9728; none : 문서에서 보이지 않게 만듭니다</div>
+          <div class="example-code">
+            -display: none
+          </div>
+        </div>
+        <div class="contents">
+          <div class="content-title">&lt;The 'Position' property&gt;</div>
+          <div class="description">
+              In order to make more complex layouts, we need to discuss the <span class="highlight-green">position</span> property. <br> Most of elements have 'static' value as default. It has a bunch of possible values, and their names make no sense and are impossible to remember. Let's go through them one by one, but maybe you should bookmark this page too.
+          </div>
+          <div class="underline"></div>
+        </div>
+<!--Day 2-->
+        <div class="index">
+          Day2.Basic CSS Outline2 
+        </div>
+        <div class="contents">
+          <div class="content-title">&lt;How to remove unnecessary margin?&gt;</div>
+          <div class="underline"></div>
+          <div class="content-subtitle">&#9728; Use <span class="highlight-green"><a href="https://necolas.github.io/normalize.css/">normalize.css</a></span></div>
+          <div class="description">- Inside the head tag in html, put code below before main.css.</div>
+          <div class="example-code">
+              &lt;link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"/&gt;
+          </div>
+        </div>
+        <div class="contents">
+          <div class="content-title">&lt;Easy way to set margin value&gt;</div>
+          <div class="underline"></div>
+          <div class="content-subtitle">&#9728; 1.Comebine (top/bottom) and (left/right)</div>
+          <div class="description">- The first value indicates top/bottom margin and second points left/right margin.</div>
+          <div class="content-subtitle">&#9728; 2.Define (top, right, bottom, left) value in single property.</div>
+          <div class="description">- Four value indecates top, right, bottom, left value each in a clockwise.</div>
+          <div class="margin-ex1">
+            <span class="margin-top-ex"><span class="rec1"></span><span class="rec2">a'</span><span class="rec3"></span></span><span class="margin-middle"><span class="rec4">d'</span><span class="rec5"></span><span class="rec6">b'</span></span><span class="margin-bottom"><span class="rec7"></span><span class="rec8">c'</span><span class="rec9"></span></span>
+          </div> 
+          <div class="example-code" id="margin-ex1">
+            1.property: top/bottom, left/right; <br>
+            margin: <span class="highlight-pink">20px</span> <span class="highlight-blue">30px</span>; <br>
+            padding: <span class="highlight-pink">20px</span> <span class="highlight-blue">30px</span>; <br><br>
+            2.property: <span class="highlight-green">a' b' c' d'</span>;<br>
+            margin: 20px 15px 20px 15px; <br>
+            padding: 20px 15px 20px 15px;     
+          </div>
+        </div>
+        <div class="practice-container">
+          <div class="content-title">&lt;Let's practice!&gt;</div>
+          <a class="example-img" href=""><img src="practice1.png" alt="sample1"></div>
+          <div class="content-subtitle" id="float-right">&#9728; 1.Comebine (top/bottom) and (left/right)</div>
+          <div class="description" id="float-right">- The first value indicates top/bottom margin and second points left/right margin.</div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
